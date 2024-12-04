@@ -1,0 +1,110 @@
+:root {
+  --font-family: "Open Sans", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+  --third-family: "Raleway", sans-serif;
+  /* font-family: "Merriweather", serif; */
+
+  --color-white: #fff;
+  --color-black: #373A39;
+  --color-title: #242121;
+  --color-gold: #fcbb08;
+}
+
+html,
+body { 
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  overflow-x: hidden;
+  font: var(--font-family);
+  color: var(--color-black);
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* container */
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* header */
+.header {
+  padding-bottom: 30px;
+}
+.nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.nav__list {
+  display: flex;
+  column-gap: 32px;
+}
+.nav__link {
+  padding: 0 6px 9px;
+  border-bottom: 1px solid transparent;
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  transition: border .3s ease;
+}
+.nav__link:hover {
+  border-bottom: 1px solid var(--color-gold);
+}
+
+/* hero */
+.hero {
+  height: calc(100vh - 94px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--second-family);
+  text-align: center;
+  text-transform: uppercase;
+  background-position: bottom center;
+  position: relative;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 43px;
+  cursor: pointer;
+  background-image: url('./../images/icon-mouse.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero__title {
+  font-weight: 500;
+  font-size: 72px;
+  color: var(--color-white);
+  margin-bottom: 18px;
+}
+.hero__decr {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2.74px;
+  color: var(--color-gold);
+}
