@@ -15,35 +15,55 @@
     <div class="container">
       <nav class="nav">
         <a class="logo" href="#">
-          <img src="images/logo.svg" alt="логотип" width="80" height="64">
+          <img src="images/logo.svg" alt="Marketing" width="80" height="64">
         </a>
 
         <ul class="nav__list">
-          <li><a class="nav__link" href="#">home</a></li>
-          <li><a class="nav__link" href="#">ABOUT US</a></li>
-          <li><a class="nav__link" href="#">PORTFOLIO</a></li>
-          <li><a class="nav__link" href="#">OUR TEAM</a></li>
-          <li><a class="nav__link" href="#">BLOG</a></li>
-          <li><a class="nav__link" href="#">CONTACT</a></li>
+          <li class="nav__item">
+            <a href="#">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">ABOUT US</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">PORTFOLIO</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">OUR TEAM</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">BLOG</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">CONTACT</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="main">
     <section class="hero bg" style="background-image: url('./images/header-bg.jpg');">
-      <h1 class="hero__title">O...MARKETING</h1>
-      <p class="hero__decr">DIGITAL MARKETING AGENCY</p>
+      <div class="hero__container container">
+        <h1 class="hero__title">
+          O...MARKETING
+        </h1>
+
+        <div class="hero__subtitle">
+          DIGITAL MARKETING AGENCY
+        </div>
+
+        <a class="hero__icon-link" href="#"></a>
+      </div>
     </section>
     <section class="about">
-      <div class="container">
-        <h2 class="title">
-          About Us
-        </h2>
+      <div class="about__container container">
+        <h2 class="about__title title">About Us</h2>
 
         <div class="about__text">
           <p>
             Практика показывает, что большие продажи далеко не всегда зависят от того, сколько вы потратите на продвижение сайта и рекламную кампанию. Значительно сильнее конечный результат зависит от правильной организации кампании. Мы достигаем максимальной эффективности и помогаем сберечь бюджеты наших клиентов, используя стратегический интернет-маркетинг.
           </p>
+
           <p>
             Определяем цели продвижения — что наш клиент хочет получить, когда работа будет сделана. Проводим маркетинговые исследования рынка, целевой аудитории, конкурентной среды. При разработке стратегии учитываем все имеющиеся данные.
           </p>
@@ -52,21 +72,23 @@
     </section>
     <section class="expertise">
       <div class="container">
-        <h2 class="title">Our Expertise</h2>
-
-        <div class="expertise__inner">
-          <ul class="expertise-info">
-            <li class="expertise-info__item">
+        <h2 class="expertise__title title">Our expertise</h2>
+        
+        <div class="expertise__content">
+          <ul class="expertise__info">
+            <li class="expertise__info-item">
               BRANDING
-              <span style="width: calc(100% - 90%);">90%</span>
+              <span style="width: calc(100% - 90%)">90%</span>
             </li>
-            <li class="expertise-info__item">
+
+            <li class="expertise__info-item">
               DESIGN
-              <span style="width: calc(100% - 80%);">80%</span>
+              <span style="width: calc(100% - 80%)">80%</span>
             </li>
-            <li class="expertise-info__item">
+
+            <li class="expertise__info-item">
               DEVELOPMENT
-              <span style="width: calc(100% - 85%);">85%</span>
+              <span style="width: calc(100% - 85%)">85%</span>
             </li>
           </ul>
 
@@ -74,32 +96,44 @@
             <p>
               В стратегию интернет-маркетинга входит создание имиджевой и рекламной концепции, разработка контент-стратегии, распределение использования различных каналов коммуникации.
             </p>
+
             <p>
               Реализуем принятую стратегию, отслеживая промежуточные результаты, и корректируя будущие действия с учетом изменений. Главной целью в этом процессе для нас является конечный результат, а не следование планам.
             </p>
           </div>
         </div>
 
-        <ul class="expertise__items">
-          <li class="expertise__item expertise__item--design">
-            <h3 class="expertise__item-title">GRAPHIC DESIGN</h3>
-            <div class="expertise__item-text">
+        <ul class="expertise__list">
+          <li class="expertise__list-item expertise__list-item--design bg">
+            <h3 class="expertise__list-title">
+              GRAPHIC DESIGN
+            </h3>
+
+            <div class="expertise__descr">
               <p>
                 Рекламный дизайн, дизайн упаковки, этикетки, листовок, каталогов, разработка презентаций, дизайн выставочных стендов
               </p>
             </div>
           </li>
-          <li class="expertise__item expertise__item--dev">
-            <h3 class="expertise__item-title">WEB DEVELOPMENT</h3>
-            <div class="expertise__item-text">
+
+          <li class="expertise__list-item expertise__list-item--dev bg">
+            <h3 class="expertise__list-title">
+              WEB DEVELOPMENT
+            </h3>
+
+            <div class="expertise__descr">
               <p>
                 Разрабатываем веб сайты от концепции до реализации. Дизайн, верстка, программирование и запуск сайт в сеть
               </p>
             </div>
           </li>
-          <li class="expertise__item expertise__item--marketing">
-            <h3 class="expertise__item-title">MARKETING</h3>
-            <div class="expertise__item-text">
+
+          <li class="expertise__list-item expertise__list-item--marketing bg">
+            <h3 class="expertise__list-title">
+              MARKETING
+            </h3>
+
+            <div class="expertise__descr">
               <p>
                 Разрабатываем маркетинговое и рекламное продвижение Вашего продукта или услуги под ключ и на любой бюджет.
               </p>
@@ -107,31 +141,6 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="magic bg-color">
-      <div class="container">
-        <div class="magic__bg-img bg" style="background-image: url('./images/magic-img.jpg');"></div>
-        <div class="magic__content">
-          <h2 class="title">
-            Let’s make magic.
-          </h2>
-
-          <div class="magic__text">
-            <p>
-              Маркетинговое агентство MGN: полный комплекс маркетинговых, рекламных и дизайнерских услуг в Харькове и Украине: маркетинговые исследования рынков, товаров, потребителей, планирование комплекса маркетинга, реклама, проведение рекламных кампаний, брендинг, рекламный дизайн, pr.
-            </p>
-            <p>
-              Нами накоплен немалый опыт работы в реальном бизнесе, в самых различных отраслях – от недвижимости до аптечного и медицинского бизнеса. Мы не просто беремся решать задачи наших клиентов, мы сами вышли из бизнес-среды и понимаем суть бизнес-процессов.
-            </p>
-            <p>
-              Мы говорим с бизнесом на одном языке!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="portfolio">
-
     </section>
   </main>
   <footer class="footer"></footer>
@@ -144,6 +153,6 @@
 
 <!-- 
 git add .
-git commit -m'add sections about expertise magic'
+git commit -m'1'
 git push
  -->

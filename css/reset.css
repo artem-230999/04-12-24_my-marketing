@@ -1,7 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html,
+body { 
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
 }
 
 body,
@@ -19,7 +32,7 @@ ol {
 
 ul,
 ol,
-input, textarea, button {
+input, textarea, button, select {
   padding: 0;
 }
 
@@ -41,7 +54,7 @@ button {
   cursor: pointer;
 }
 
-input, textarea, label, button {
+input, textarea, label, button, fieldset {
   border: none;
 }
 
